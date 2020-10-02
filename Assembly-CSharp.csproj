@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ACB81F92-D054-DFC1-5493-BDF7941A4BFF}</ProjectGuid>
+    <ProjectGuid>{A1B093ED-1FFE-EEC9-D24B-8E6A72EE5A17}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,10 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\GameFlow.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\PlayerCollisions.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -625,46 +627,46 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/nevin/Downloads/Endless_Runner_Restart/Endless_Runner_Restart/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/nevin/Documents/YOKE Game Dev/EndlessRunnerRestart/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Proto_StartScreen.unity
+    guid: 76f9414f5525d7c418b662443fcd88ee
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Proto_GameOver.unity
+    guid: dce914ed802665e4bbdcfbc24791bf9c
   m_configObjects: {}
