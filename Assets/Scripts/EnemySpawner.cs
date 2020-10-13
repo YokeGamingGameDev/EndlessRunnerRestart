@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
                 int randomInd = Random.Range(0, ObstacleSources.Length);
                 Vector3 spawnPos = SpawnPositions[i];
                 spawnPos.z += Player.position.z;
-                spawnPos.y += (ObstacleSources[randomInd].transform.localScale.y / 2);
+                spawnPos.y += (ObstacleSources[randomInd].transform.position.y);
                 Instantiate(ObstacleSources[randomInd], spawnPos, ObstacleSources[randomInd].transform.rotation);
             }
 

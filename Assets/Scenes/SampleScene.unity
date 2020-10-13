@@ -427,7 +427,7 @@ RectTransform:
   m_GameObject: {fileID: 858853316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1128727053}
   m_RootOrder: 0
@@ -904,7 +904,7 @@ MonoBehaviour:
   - {fileID: 2975354356739879324, guid: 19113e153ad3e964d9c5433a314a53ca, type: 3}
   - {fileID: 1914843182085015956, guid: bc1a628a73314e8499a9584687f5916e, type: 3}
   Player: {fileID: 1595827171}
-  timeBetweenSpawns: 5
+  timeBetweenSpawns: 2
 --- !u!114 &1080150073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1578,6 +1578,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1332977567058421241, guid: cf1f61e92cd35cb4e85bde1dce80403c,
+        type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1332977567058421242, guid: cf1f61e92cd35cb4e85bde1dce80403c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1632,6 +1637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332977567058421245, guid: cf1f61e92cd35cb4e85bde1dce80403c,
+        type: 3}
+      propertyPath: frameMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1f61e92cd35cb4e85bde1dce80403c, type: 3}
