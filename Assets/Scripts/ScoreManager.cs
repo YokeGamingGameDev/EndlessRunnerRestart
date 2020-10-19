@@ -25,4 +25,9 @@ public class ScoreManager : MonoBehaviour
 
         ScoreText.text = "Score: " + score.ToString("F2");
     }
+
+    public void CollectedCoin()
+    {
+        score += 10;
+    }
 }

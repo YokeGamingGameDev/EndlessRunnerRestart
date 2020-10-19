@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollisions : MonoBehaviour
 {
+
+    ScoreManager scoreManager;
+
     void Start()
     {
-        
+        scoreManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ScoreManager>();
     }
 
     void Update()
@@ -20,6 +23,7 @@ public class PlayerCollisions : MonoBehaviour
         if(other.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
+            scoreManager.CollectedCoin();
         }
 
         if(other.CompareTag("Obstacle"))
