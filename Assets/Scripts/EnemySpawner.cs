@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        SpawnPositions =  new Vector3[] { new Vector3(-5, 0, 15), new Vector3(5, 0, 15), new Vector3(5, 0, 15) };
+        SpawnPositions =  new Vector3[] { new Vector3(-5, 0, 15), new Vector3(0, 0, 15), new Vector3(5, 0, 15) };
         Debug.Log(SpawnPositions);
         SpawnedObstacles = new List<GameObject>();
         timer = timeBetweenSpawns;
