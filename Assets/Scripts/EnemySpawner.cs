@@ -29,14 +29,18 @@ public class EnemySpawner : MonoBehaviour
     {
         if(timer <= 0)
         {
+            int omittedLane = Random.Range(0, 3);
             for(int i = 0; i < 3; i++)
             {
-                int randomInd = Random.Range(0, ObstacleSources.Length);
-                Vector3 spawnPos = SpawnPositions[i];
-                spawnPos.z += Player.position.z;
-                spawnPos.y += (ObstacleSources[randomInd].transform.position.y);
-                GameObject newObstacle = Instantiate(ObstacleSources[randomInd], spawnPos, ObstacleSources[randomInd].transform.rotation) as GameObject;
-                SpawnedObstacles.Add(newObstacle);
+                if (i != omittedLane)
+                {
+                    int randomInd = Random.Range(0, ObstacleSources.Length);
+                    Vector3 spawnPos = SpawnPositions[i];
+                    spawnPos.z += Player.position.z;
+                    spawnPos.y += (ObstacleSources[randomInd].transform.position.y);
+                    GameObject newObstacle = Instantiate(ObstacleSources[randomInd], spawnPos, ObstacleSources[randomInd].transform.rotation) as GameObject;
+                    SpawnedObstacles.Add(newObstacle);
+                }
             }
 
             timer = timeBetweenSpawns;
