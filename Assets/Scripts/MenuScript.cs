@@ -17,4 +17,14 @@ public class MenuScript : MonoBehaviour
     {
         fadeGroup.alpha = 1 - Time.timeSinceLevelLoad * fadeInSpeed;
     }
+
+    public void OnPlayClick()
+    {
+        Debug.Log("Play Button has been clicked");
+    }
+
+    public void OnShopClick()
+    {
+        Debug.Log("Shop Button has been clicked");
+    }
 }

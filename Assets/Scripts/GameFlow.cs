@@ -29,14 +29,4 @@ public class GameFlow : MonoBehaviour
             }
         }
     }
-
-    //IEnumerator PathTiles()
-    //{
-    //    yield return new WaitForSeconds(2);
-    //    Instantiate(PathObj, PathPos, PathObj.rotation);
-    //    PathPos.z += 20;
-    //    Instantiate(PathObj, PathPos, PathObj.rotation);
-    //    PathPos.z += 20;
-    //    StartCoroutine(PathTiles());
-    //}
 }

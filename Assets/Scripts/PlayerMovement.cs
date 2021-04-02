@@ -16,23 +16,11 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 startPos;
     public Vector2 direction;
     public bool directionChosen;
-    public bool t = true;
 
     public float frameMultiplier;
 
-    IEnumerator incDifficulty()
-    {
-        while(t)
-        {
-            speed += 5;
-            yield return new WaitForSeconds(15);
-        }
-        
-    }
-
     void Start()
     {
-        StartCoroutine("incDifficulty");
         rb = GetComponent<Rigidbody>();
 
         currPosInd = 1;

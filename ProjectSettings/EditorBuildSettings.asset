@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Proto_GameOver.unity
     guid: dce914ed802665e4bbdcfbc24791bf9c
   - enabled: 1
+    path: Assets/Scenes/Preloader.unity
+    guid: e756bdbd663e17c48aec637c389315fc
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: fafbfd12eed0b1542ad4336dc7c8e4ed
   m_configObjects: {}
